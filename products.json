@@ -2,31 +2,37 @@
   {
     "productName": "Isla Bra",
     "productID": "LN332",
-    "productPrice": 29
+    "productPrice": 29,
+    "productImg": "/img/bp-ln332blrss-large.jpg"
   },
   {
     "productName": "Nordic Rose Bra",
     "productID": "LN336",
-    "productPrice": 30
+    "productPrice": 30,
+    "productImg": "/img/bp-ln336xkmc-large.jpg"
   },
   {
     "productName": "Zentangle Bra",
     "productID": "FY240",
-    "productPrice": 34
+    "productPrice": 34,
+    "productImg": "/img/bp-fy240mnc-large.jpg"
   },
   {
     "productName": "Clara Bra",
     "productID": "PN112",
-    "productPrice": 32
+    "productPrice": 32,
+    "productImg": "/img/bp-pn112cfra-large.jpg"
   },
   {
     "productName": "Deco Delight Bra",
     "productID": "FY158",
-    "productPrice": 34
+    "productPrice": 34,
+    "productImg": "/img/bp-fy158capb-large.jpg"
   },
   {
     "productName": "Sienna Bra",
     "productID": "LN328",
-    "productPrice": 32
+    "productPrice": 32,
+    "productImg": "/img/bp-ln328pkks-large.jpg"
   }
 ]
