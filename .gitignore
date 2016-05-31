@@ -34,3 +34,6 @@ node_modules
 
 # No need to put the images on GH
 img
+
+# Lose the outputted css
+styles/main.min.css
