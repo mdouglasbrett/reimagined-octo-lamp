@@ -13,8 +13,8 @@ server.register(require('inert'), function(err) {
   server.route({
     method: 'GET',
     path: '/',
-    handler: function(request, reply) {
-      reply.file('index.html');
+    handler:  {
+      file: 'index.html'
     }
   });
 
@@ -32,6 +32,26 @@ server.register(require('inert'), function(err) {
     handler: {
       directory: {
         path: './img/'
+      }
+    }
+  });
+
+  server.route({
+    method: 'GET',
+    path: '/styles/{param*}',
+    handler: {
+      directory: {
+        path: './styles/'
+      }
+    }
+  });
+
+  server.route({
+    method: 'GET',
+    path: '/js/{param*}',
+    handler: {
+      directory: {
+        path: './js/'
       }
     }
   });
