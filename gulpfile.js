@@ -5,6 +5,8 @@ const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const minifyCss = require('gulp-minify-css');
 const rename = require('gulp-rename');
+const browserSync = require('browser-sync');
+const reload = browserSync.reload;
 
 //  Compile and automatically prefix stylesheets
 gulp.task('styles', () => {
@@ -34,4 +36,16 @@ gulp.task('styles', () => {
 
 });
 
-gulp.watch(['styles/main.scss'], ['styles']);
+//  Watch files for changes & reload
+gulp.task('serve', ['styles'], () => {
+  browserSync({
+    notify: false,
+    //  Run as an https by uncommenting 'https: true'
+    //  https: true,
+    browser: 'google-chrome',
+    proxy: "localhost:3000"
+  });
+
+  gulp.watch(['styles/**/*.{scss,css}'], ['styles', reload]);
+  gulp.watch(['js/**/*.js'], [reload]);
+  });

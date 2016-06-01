@@ -2,7 +2,10 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Shopping from './components/Shopping.jsx';
+import ProductList from './components/ProductList.jsx';
+import ShoppingBag from './components/ShoppingBag.jsx';
 
 ReactDOM.render(
-    <Shopping url="/products.json"/>, document.getElementById('content'));
+    <ProductList url="/products.json" />, document.getElementById('catalogue'));
+ReactDOM.render(
+  <ShoppingBag />, document.getElementById('shoppingBag'));
