@@ -30,4 +30,8 @@ gulp.task('styles', () => {
   .pipe(minifyCss({keepSpecialComments: 0}))
   .pipe(rename('main.min.css'))
   .pipe(gulp.dest('styles/'))
+
+
 });
+
+gulp.watch(['styles/main.scss'], ['styles']);

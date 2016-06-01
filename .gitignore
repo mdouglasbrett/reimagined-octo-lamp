@@ -37,3 +37,9 @@ img
 
 # Lose the outputted css
 styles/main.min.css
+
+# Ignore bundle.js
+js/bundle.js
+
+# Ultimately ignore any dist folder
+dist/

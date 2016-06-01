@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./index.js",
     "styles": "gulp styles",
-    "build": "npm run styles; webpack; webpack --watch"
+    "build": "webpack; webpack --watch"
   },
   "repository": {
     "type": "git",
